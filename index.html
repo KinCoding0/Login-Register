@@ -18,13 +18,13 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="" class="login-link">Login</a></li>
+                <li><a href="#" id="btn-login">Login</a></li>
             </ul>
         </nav>
         <div class="box-position">
-            <div class="box-container">
-                <span class="btn-x"><i class='bx bx-x'></i></i></span>
-                <form action="" class="box login">
+            <div class="box-container" id="box-container">
+                <span class="btn-x" id="btn-x"><i class='bx bx-x'></i></i></span>
+                <form action="" class="box login" id="box-login">
                     <h1>Login</h1>
                     <div class="input-group">
                         <input type="email" required>
@@ -42,9 +42,9 @@
                     </span>
                     <a href="#" class="forgot-link">Forgot password?</a>
                     <button type="submit" class="btn-submit">Submit</button>
-                    <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+                    <p class="register-link">Don't have an account? <a href="#" id="register-link">Register</a></p>
                 </form>
-                <form action="" class="box register">
+                <form action="" class="box register" id="box-register">
                     <h1>Register</h1>
                     <div class="input-group">
                         <input type="email" required>
@@ -71,7 +71,7 @@
                         <label for="">I agree to the terms & conditions</label>
                     </span>
                     <button type="submit" class="btn-submit">Submit</button>
-                    <p class="login-link">Already have an account?<a href="#"> Login</a></p>
+                    <p class="login-link">Already have an account?<a href="#" id="login-link"> Login</a></p>
 
                 </form>
             </div>
@@ -79,6 +79,7 @@
         </div>
 
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>
