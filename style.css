@@ -112,7 +112,7 @@ form {
 
 .box .input-group {
     position: relative;
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
 
 }
 
@@ -139,7 +139,9 @@ form {
     padding-right: 50px;
 }
 
-input:focus+label {
+label.active,
+
+input:focus~label {
     top: -100%;
 }
 
@@ -208,6 +210,7 @@ input:focus+label {
 }
 
 .register {
+    width: 80%;
     position: absolute;
     left: -300%;
     transition: left 0.8s ease;

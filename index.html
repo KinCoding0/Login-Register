@@ -27,12 +27,12 @@
                 <form action="" class="box login" id="box-login">
                     <h1>Login</h1>
                     <div class="input-group">
-                        <input type="email" required>
+                        <input type="email" required value="">
                         <label for="">Email</label>
                         <i class='bx bx-envelope'></i>
                     </div>
                     <div class="input-group">
-                        <input type="password" required>
+                        <input type="password" required value="">
                         <label for="">Password</label>
                         <i class='bx bx-lock-alt'></i>
                     </div>
@@ -47,25 +47,28 @@
                 <form action="" class="box register" id="box-register">
                     <h1>Register</h1>
                     <div class="input-group">
-                        <input type="email" required>
+                        <input type="text" required value="">
                         <label for="">Username</label>
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-group">
-                        <input type="email" required>
+                        <input type="email" required value="">
                         <label for="">Email</label>
                         <i class='bx bx-envelope'></i>
                     </div>
                     <div class="input-group">
-                        <input type="password" required>
+                        <input type="password" required value="" id="password">
                         <label for="">Password</label>
                         <i class='bx bx-lock-alt'></i>
                     </div>
+                    <span id="error"></span>
                     <div class="input-group">
-                        <input type="password" required>
+                        <input type="password" required value="" id="confirm-password">
                         <label for="">Confirm Password</label>
                         <i class='bx bx-lock-alt'></i>
+
                     </div>
+                    <span id="error"></span>
                     <span class="check-box">
                         <input type="checkbox">
                         <label for="">I agree to the terms & conditions</label>
