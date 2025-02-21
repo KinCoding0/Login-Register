@@ -181,6 +181,7 @@ input:focus+label {
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .register-link {
