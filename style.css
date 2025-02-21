@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pictures/nikita-savostin-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    list-style: none;
+    margin-inline: 1.5rem;
+    position: relative;
+}
+
+
+.menu li a {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li a::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 0%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.menu li a:hover::before {
+    width: 70%;
+    transition: all 0.3s ease;
+}
+
+.box-position {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.box-container {
+    position: relative;
+    min-width: 450px;
+}
+
+.btn-x {
+    font-size: 3rem;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    right: 0;
+    top: -5px;
+    cursor: pointer;
+}
+
+.box {
+    width: 100%;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+    text-align: center;
+    color: #fff;
+
+}
+
+.box .input-group {
+    position: relative;
+    margin: 4rem 0;
+
+}
+
+.input-group label {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.input-group input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+input:focus+label {
+    top: -100%;
+}
+
+.input-group::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: #fff;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    z-index: 1;
+}
+
+.box i {
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    right: 5px;
+    top: 0;
+}
+
+.check-box {
+    display: inline-flex
+}
+
+.check-box label {
+    color: #fff;
+}
+
+.forgot-link {
+    text-decoration: none;
+    float: right;
+    color: #fff;
+}
+
+
+.btn-submit {
+    width: 100%;
+    height: 35px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.register-link {
+    color: #fff;
+    text-align: center;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
